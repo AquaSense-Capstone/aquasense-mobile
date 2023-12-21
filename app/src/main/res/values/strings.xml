@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Aquasense</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="string_home_desc">Berikut ini ada beberapa cara untuk penanggulangan bencana banjir : \n1. Membuat fungsi sungai dan selokan dapat bekerja dengan baik. Sungai dan selokan adalah tempat aliran air sehingga jangan sampai tercemari dengan sampah atau menjadi tempat pembuangan sampah yang akhirnya menyebabkan sungai dan selokan menjadi tersumbat.
+        \n2. Melakukan reboisasi tanaman khususnya jenis tanaman dan pepohonan yang dapat menyerap air dengan cepat.
+        \n3. Memperbanyak dan menyediakan lahan terbuka untuk membuar lahan hijau untuk penyerapan air.
+        \n4. Berhenti membangun perumahan di tepi sungai, karena akan mempersempit sungai dan sampah rumah juga akan masuk sungai.
+        \n5. Berhenti membangun gedung-gedung tinggi dan besar, karena akan menyebabkan bumi ini akan semakin sulit menahan bebanya dan membuat permukaan tanah turun. Hindari penebangan pohon-pohon di hutan secara liar dan juga di bantaran sungai, karena pohon berperan penting untuk pencegahan banjir. Sebenarnya menebang pohon tidak dilarang bila kita akan menanam kembali pohon tersebut dan tidak membiarkan hutan menjadi gundul. Dengan melakukan cara penanggulangan banjir tersebut kita dapat mencegah bencana banjir. Karena selama ini pemerintah pun telah bekerja keras untuk mencegah terjadinya banjir, tetapi semua masyarakat pun harus mendukung agar semua bisa teratasi dengan baik.</string>
+    <string name="title_activity_perkiraan_cuaca_detail">PerkiraanCuacaDetail</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

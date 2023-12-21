@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clItemPerkiraanCuaca"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="15dp">
+
+    <TextView
+        android:id="@+id/tvItemPerkiraanCuacaTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textColor="@color/navy"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_navy_outline"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemPerkiraanCuacaTitle">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llItemPerkiraanCuacaPagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/llItemPerkiraanCuacaSiang"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivItemPerkiraanCuacaPagi"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_navy_black_outline"
+                android:padding="10dp"
+                android:src="@drawable/ic_sunny" />
+
+            <TextView
+                android:id="@+id/tvItemPerkiraanCuacaPagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pagi"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llItemPerkiraanCuacaSiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@+id/llItemPerkiraanCuacaSore"
+            app:layout_constraintStart_toEndOf="@id/llItemPerkiraanCuacaPagi"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivItemPerkiraanCuacaSiang"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_navy_black_outline"
+                android:padding="10dp"
+                android:src="@drawable/ic_partly_cloud" />
+
+            <TextView
+                android:id="@+id/tvItemPerkiraanCuacaSiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siang"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llItemPerkiraanCuacaSore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toStartOf="@id/llItemPerkiraanCuacaMalam"
+            app:layout_constraintStart_toEndOf="@id/llItemPerkiraanCuacaSiang"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivItemPerkiraanCuacaSore"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_navy_black_outline"
+                android:padding="10dp"
+                android:src="@drawable/ic_rainy" />
+
+            <TextView
+                android:id="@+id/tvItemPerkiraanCuacaSore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sore"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/llItemPerkiraanCuacaMalam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/llItemPerkiraanCuacaSore"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivItemPerkiraanCuacaMalam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_navy_black_outline"
+                android:padding="10dp"
+                android:src="@drawable/ic_rain_thunder" />
+
+            <TextView
+                android:id="@+id/tvItemPerkiraanCuacaMalam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Malam"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
