@@ -25,4 +25,35 @@
     <style name="Theme.Aquasense.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Aquasense.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SelamatDatang">
+        <item name="fontFamily">@font/inter_extrabold</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/navy</item>
+    </style>
+
+    <style name="Title">
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textColor">@color/abu</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/abu</item>
+        <item name="hintTextColor">@color/abu</item>
+        <item name="startIconTint">@color/navy</item>
+        <item name="boxStrokeWidth">3dp</item>
+        <item name="boxStrokeWidthFocused">3dp</item>
+    </style>
+
+    <style name="TombolLogin">
+        <item name="fontFamily">@font/inter_bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/navy</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+
 </resources>

@@ -16,9 +16,6 @@ import com.aquasense.ui.perkiraancuaca.model.PerkiraanCuaca
 class PerkiraanCuacaFragment : Fragment() {
 
     private var _binding: FragmentPerkiraanCuacaBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -47,10 +44,7 @@ class PerkiraanCuacaFragment : Fragment() {
     }
 
     private fun navigateBack() {
-        // Get the FragmentManager
         val fragmentManager = requireActivity().supportFragmentManager
-
-        // Pop the back stack to go back to FragmentA
         fragmentManager.popBackStack()
     }
 

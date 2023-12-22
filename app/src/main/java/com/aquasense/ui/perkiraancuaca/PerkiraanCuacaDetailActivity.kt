@@ -41,7 +41,6 @@ class PerkiraanCuacaDetailActivity : AppCompatActivity() {
         val rvPerkiraanCuacaWaktu: RecyclerView = binding.rvPerkiraanCuacaWaktu
         rvPerkiraanCuacaWaktu.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         rvPerkiraanCuacaWaktu.adapter = PerkiraanCuacaDetailWaktuAdapter(timeSlots) { selectedTimeSlot ->
-            // Handle click event, for example, show a toast with the selected time slot
             Toast.makeText(this, "Selected time: $selectedTimeSlot", Toast.LENGTH_SHORT).show()
         }
 

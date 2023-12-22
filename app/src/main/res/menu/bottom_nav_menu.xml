@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/navigation_home"
-        android:icon="@drawable/ic_home_selector"
-        android:title="" />
+        android:icon="@drawable/home"
+        android:title="Beranda" />
 
     <item
         android:id="@+id/navigation_perkiraan_cuaca"
         android:icon="@drawable/ic_perkiraan_selector"
-        android:title="" />
+        android:title="Cuaca" />
 
     <item
         android:id="@+id/navigation_laporan"
-        android:icon="@drawable/ic_laporan_selector"
-        android:title="" />
+        android:icon="@drawable/laporanwarga"
+        android:title="Laporan" />
 
 </menu>

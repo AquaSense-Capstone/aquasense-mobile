@@ -14,9 +14,6 @@ import com.aquasense.databinding.FragmentMonitoringBinding
 class MonitoringFragment : Fragment() {
 
     private var _binding: FragmentMonitoringBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -47,30 +44,17 @@ class MonitoringFragment : Fragment() {
     }
 
     private fun navigateBack() {
-        // Get the FragmentManager
         val fragmentManager = requireActivity().supportFragmentManager
-
-        // Pop the back stack to go back to FragmentA
         fragmentManager.popBackStack()
     }
 
     private fun navigateToFragment() {
-        // Create an instance of Fragment
         val monitoringDetailFragment = MonitoringDetailFragment()
-
-        // Get the FragmentManager
         val fragmentManager = requireActivity().supportFragmentManager
-
-        // Begin a FragmentTransaction
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
 
-        // Replace the current fragment with Fragment
         transaction.replace(R.id.clHome, monitoringDetailFragment)
-
-        // Add the transaction to the back stack (optional, allows the user to navigate back)
         transaction.addToBackStack(null)
-
-        // Commit the transaction
         transaction.commit()
     }
 

@@ -17,4 +17,35 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="masuk">Silahkan masukkan informasi login anda</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="login">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="buat_akun">Buat Akun Anda</string>
+    <string name="segera">Ayo, segera daftarkan akunmu</string>
+    <string name="nama_pengguna">Nama Pengguna</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Kata Sandi</string>
+    <string name="daftar_google">Masuk Dengan Google</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="description">Deskripsi</string>
+    <string name="upload">Unggah Gambar</string>
+    <string name="kirim_lokasi">Kirim Lokasi</string>
+    <string name="alamat">Alamat Lengkap</string>
+    <string name="yes">Ya</string>
+    <string name="uri_not_found">Tidak ada file atau direktori</string>
+    <string name="error_image_alert">Gambar Tidak Ditemukan</string>
+    <string name="image_upload_failed">Gagal Mengunggah Gambar</string>
+    <string name="failed_alert">Gagal Diunggah</string>
+    <string name="ini_text">ini teks</string>
+    <string name="ini_description">ini deskripsi</string>
+    <string name="cancel">Batalkan</string>
+    <string name="logout">Keluar</string>
+    <string name="logout_konfirmasi">Apakah Anda Yakin Ingin Keluar?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

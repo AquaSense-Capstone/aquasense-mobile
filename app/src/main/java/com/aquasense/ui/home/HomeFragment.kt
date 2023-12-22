@@ -1,6 +1,7 @@
 package com.aquasense.ui.home
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,14 +15,12 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.lifecycle.ViewModelProvider
 import com.aquasense.R
 import com.aquasense.databinding.FragmentHomeBinding
+import com.aquasense.ui.autentikasi.login.LoginActivity
 import com.aquasense.ui.monitoring.MonitoringFragment
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -51,38 +50,24 @@ class HomeFragment : Fragment() {
     }
 
     private fun navigateToFragment() {
-        // Create an instance of Fragment
         val monitoringFragment = MonitoringFragment()
-
-        // Get the FragmentManager
         val fragmentManager = requireActivity().supportFragmentManager
-
-        // Begin a FragmentTransaction
         val transaction: FragmentTransaction = fragmentManager.beginTransaction()
 
-        // Replace the current fragment with Fragment
         transaction.replace(R.id.clHome, monitoringFragment)
-
-        // Add the transaction to the back stack (optional, allows the user to navigate back)
         transaction.addToBackStack(null)
-
-        // Commit the transaction
         transaction.commit()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
     private fun setupWebView() {
-        // Enable JavaScript
         val webSettings: WebSettings = binding.wvHomeVideoInfo.settings
         webSettings.javaScriptEnabled = true
 
-        // Enable HTML5 video support
         webSettings.mediaPlaybackRequiresUserGesture = false
 
-        // Set up WebView to handle video playback
         binding.wvHomeVideoInfo.webChromeClient = WebChromeClient()
 
-        // Load the YouTube video
         val videoId = "sJsC6zQCfNI"
         val videoUrls = "https://www.youtube.com/embed/$videoId"
         binding.wvHomeVideoInfo.loadUrl(videoUrls)
@@ -94,7 +79,7 @@ class HomeFragment : Fragment() {
         builder.setMessage("Are you sure you want to logout?")
         builder.setPositiveButton("Logout") { dialog, which ->
             dialog.dismiss()
-            requireActivity().supportFragmentManager.beginTransaction().remove(this).commit()
+            navigateToLogin()
         }
         builder.setNegativeButton("Cancel") { dialog, which ->
             // Dismiss the dialog if the user clicks on Cancel
@@ -108,5 +93,12 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    private fun navigateToLogin() {
+        // Implement navigation to login activity here
+        val intent = Intent(requireContext(), LoginActivity::class.java)
+        startActivity(intent)
+        requireActivity().finish() // Optional: finish the current activity if needed
     }
 }
